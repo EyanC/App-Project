@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 
 const cyberSchema = new mongoose.Schema({
-    threat:  { type: String },
-    impact: { type: String },
-    mitigation:  { type: String },
+    threat: String,
+    impact: String,
+    mitigation: String
 })
 
-const cyberSecurityCollection = mongoose.model('Cyber', cyberSchema);
+//Creating collection name //Schema//
+const Schema = mongoose.model('Schema', cyberSchema);
 
-module.exports = cyberSecurityCollection;
+module.exports = Schema;
