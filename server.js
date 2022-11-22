@@ -40,7 +40,9 @@ app.get('/cyberseed', (req,res)=>{
 
 app.get('/cyber', (req, res) => {
     Schema.find({}, (error, allCyberPost) => {
-        res.render('index.ejs', {data: allCyberPost})
+        res.render('index.ejs', {
+            data: allCyberPost
+        })
         //reference data in index
     })
 })
