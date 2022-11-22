@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title>CyberSecurity</title>
+</head>
+<body>
+    <h1>Cyber index</h1>
+    <form action="/cyber/new">
+        <button type="submit" name="button">Add new movie</button>
+    </form>
+    <table>
+
+        <% for (let i = 0; i < data.length; i++) { %>
+            
+        <tr>
+          <td><h3>date</h3><%=data[i].date%></td>
+          <td> <a href="/<%= data[i]._id%>/edit ">EDIT</a></td>
+          <td> <h3>Name</h3><a href="/cyber/<%=data[i]._id%>"><%=data[i].name%></a></td>
+          <td> <h3>Reviews</h3><%=data[i].rating%></td>
+         
+          <td> <form action="/<%=data[i]._id; %>?_method=DELETE" method="POST">
+            <input type="submit" value="DELETE"/>
+        </form></td>
+        </tr>
+        <% } %>
+
+      </table>
+</body>
+</html>

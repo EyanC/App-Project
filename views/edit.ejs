@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Editing Cyber Post</title>
+    </head>
+    <body>
+        <h1>Edit Cyber Post</h1>
+        <form action="/netflix/<%=editPost._id %>?_method=PUT" method="POST">
+            Threat: <input type="text" name="threat" value="<%=editPost.threat%>"/><br/>
+            Impact: <input type="text" name="impact" value="<%=editPost.impact%>"/><br/>
+            Mitigation: <input type="text" name="mitigation" value="<%=editPost.mitigation%>">
+            <input type="submit" name="submit" value="Submit Changes"/>
+        </form>
+        <div class="divTag">
+        <h4>
+        <a href="/cyber">Return to list of post</a>
+        </h4>
+        </div>
+    </body>
+</html>

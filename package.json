@@ -1,0 +1,26 @@
+{
+  "name": "app-project",
+  "version": "1.0.0",
+  "description": "GA Second App Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EyanC/App-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EyanC/App-Project/issues"
+  },
+  "homepage": "https://github.com/EyanC/App-Project#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.7.2"
+  }
+}
