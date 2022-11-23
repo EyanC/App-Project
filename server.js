@@ -10,17 +10,12 @@ app.use(express.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
 app.use(express.static(__dirname + "/public"))
 
-//Works one empty object
-// app.post('cyberseed', (req,res) => {
-//     Schema.create(req.body, (error, newEntry) =>
-//         res.render('/show') //accepting string
-//     )
-// })
+
 
 app.get('/cyberseed', (req,res)=>{
     //passing seed to create
-    Cyberseed.create(cyberseed, (error, data)=> {
-        res.redirect('/')
+    Schema.create(cyberseed, (error, data)=> {
+        res.redirect('/cyber')
     })
 })
 
@@ -76,12 +71,18 @@ app.delete('/:id', (req,res) => {
 })
 
 //Edit 
-app.put('/Cyber/:id', (req,res) => {
+app.put('/editPost/:id', (req,res) => {
     Schema.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedModel) => {
-        res.render('/cyber', {entry: foundEntry})
+        res.redirect('/cyber')
     })
 })
 
+//Works one empty object
+app.post('/new', (req,res) => {
+    Schema.create(req.body, (error, newEntry) =>
+        res.redirect('/cyber') //accepting string
+    )
+})
 
 ///////Funding db
 

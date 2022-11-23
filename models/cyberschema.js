@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 const cyberSchema = new mongoose.Schema({
-    threat: String,
-    impact: String,
-    mitigation: String
+    threat: {type: String},
+    impact: {type: String},
+    mitigation: {type: String}
 })
 
 //Creating collection name //Schema//
