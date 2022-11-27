@@ -1,7 +1,22 @@
 body {
     background-color: aquamarine;
+    
 }
 
-.containerNew {
+ h1 {
+    text-align: center;
+} 
+
+
+
+
+/* Trash */
+
+/* .indexh1 {
+    text-align: center;
+} */
+
+
+/* .containerNew {
 list-style: none;
-}
+} */
