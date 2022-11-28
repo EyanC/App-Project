@@ -1,6 +1,9 @@
-body {
-    background-color: aquamarine;
+                                        /* INDEX FILE */
+.indexbody {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('https://i.imgur.com/xR2zjiu.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
  h1 {
@@ -8,60 +11,126 @@ body {
 } 
 
 
-.footer {
-    display: flexbox;
-    bottom: 0;
-    /* height: 10vh; */
-    box-sizing:content-box;
-    border-style: solid, black;
-    border: 1.5px solid black; 
-    justify-content: space-between
-    /* background-color: lightsteelblue; */
-}
- #iconList {
+                                       /* EDIT FILE */
+.editlink {
     display: flex;
-    font-size: 1em;  
-}
-.li1{
-    list-style: none;
-    justify-content: space-evenly;
-    padding: 0 100% 0 0%; 
-}
-.li2{
-    list-style: none;
-    justify-content: space-evenly;
-    padding: 0 100% 0 100%; 
-}
-.li3{
-    list-style: none;
-    justify-content: space-evenly;
-    padding: 0 100% 0 100%; 
-}
-.li4{
-    list-style: none;
-    justify-content: space-evenly;
-    padding: 0 100% 0 100%; 
-} 
-.socialLinks {
-    display: flex;
-    min-height: auto;
-    border-style: solid, black;
-    border: 1.5px solid black;
-    /* justify-content: space-between; */
-    background-color: aliceblue;
-    color: royalblue;
-}
-
-
-
-
-/* Trash */
-
-/* .indexh1 {
+    /* flex-direction:row; */
+    flex-basis: 100%;
+    border-style: solid;
+    border-color: black;
     text-align: center;
-} */
+    background-color: lightgray;
+    justify-content: space-around;
+    margin: 4em 0;
+    /* margin: auto; */
+    height: auto; 
+    width: 80px;
+    /* right: auto;     */
+}
+.editreturnlink {
+    display: flex;
+    flex-direction:row;
+    flex-basis: 100%;
+    border-style: solid;
+    /* border: 50%; */
+    border-color: aquamarine;
+    text-align: center;
+    text-decoration: none;
+    background-color: lightcoral;
+    color: black;
+    justify-content: space-around;
+    margin: 9em 10;
+    /* margin-top: ; */
+    height: 38px; 
+    width: 16%; 
+    /* right: auto;     */
+}
+#carouselthreats {
+    margin: 25px auto 0px auto;
+    max-width: 940px;
+}
+.editbody {
+    background-color: lightsteelblue;
+}
+
+.containerNew {
+    display: flex;
+    flex-direction:row;
+    flex-basis: 100%;
+    border-style: solid;
+    /* border-color: aquamarine; */
+    text-align: center;
+    /* background-color: lightcoral; */
+    justify-content: space-around;
+    margin: .7em ;
+    /* indent: right; */
+    /* margin: auto; */
+    /* height: auto; */
+    /* width: 50px; */
+    /* right: auto;     */
+}
+
+.editsubmit {
+   background-color: lightcoral;
+   border-color: aqua;
+}
+
+label{
+    display: flex;
+    flex-direction: row;
+    float: center;
+    clear: center;
+    /* width: 250px; */
+    text-align: center;
+}
+input {
+  display: flex;
+  float: center;
+}
 
 
-/* .containerNew {
-list-style: none;
-} */
+                                               /* NEW FILE */
+.newbody {
+    font-family: 'Franklin Gothic Medium','Arial Narrow', Arial, sans-serif;
+    background-image: url('https://www.cpomagazine.com/wp-content/uploads/2019/07/new-cyber-attack-trends-report-reveals-that-digital-criminals-made-off-with-45-billion-in-2018_1500.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: red;
+    
+}
+                                            
+h1 {
+    text-align: center;
+    color: red;
+} 
+
+.containerNew {
+    opacity: 50%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: left;
+}
+
+.newreturn {
+    display: flex;
+    /* flex-direction:row; */
+    flex-basis: 100%;
+    border-style: solid;
+    /* border: 50%; */
+    border-color: aquamarine;
+    text-align: center;
+    text-decoration: none;
+    background-color: lightgray;
+    color: red;
+    justify-content: space-around;
+    margin: 4em 0;
+    /* margin-top: ; */
+    height: 30px; 
+    width: 80px; 
+    /* right: auto;     */
+}
+

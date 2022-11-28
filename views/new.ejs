@@ -5,11 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
     <title>New Cyber Threat Added</title>
+
+    <!-- Navigation -->
+    <nav id="intro" class="bg-image shadow-2-strong">
+        <div class="mask">
+          <div class="container d-flex align-items-center justify-content-center text-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Report New Threats</h1>
+              <a class="btn btn-outline-light btn-lg m-2" href="https://www.cisa.gov/cybersecurity"button
+                rel="nofollow" target="_blank" style="color:whitesmoke">Government Cyber Reports</a>
+            </div>
+          </div>
+        </div>
+    </nav>
 </head>
-<body>
-    <h1 style="color:darkblue">New Cyber Post</h1>
-    <div class="containerNew">
+
+<body class="newbody">
+    <!-- <h1 style="color:red">New Cyber Post</h1> -->
+    <div class="containerNew" style="background-color: lightgoldenrodyellow "></div>
         <form action="/new" method="POST">
             Threat: <input type="text" name="threat" /><br/>
             Impact: <input type="text" name="impact" /><br/>
@@ -19,7 +37,7 @@
         </form>
         <div class="divTag">
             <h4>
-            <a href="/cyber">Return to list of post</a>
+            <a class="newreturn" href="/cyber">Home</a>
             </h4>
         </div>
     </div>

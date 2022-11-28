@@ -5,10 +5,32 @@
     <meta charset="UTF-8">  
     <!-- <link rel="stylesheet" href="/style.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
 
     <title>CyberSecurity</title>
+
+    <!-- Navigation -->
+    <nav id="intro" class="bg-image shadow-2-strong">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+          <div class="container d-flex align-items-center justify-content-center text-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Welcome to Cyber Threats</h1>
+              <h5 class="mb-4">By: Eyan Cea</h5>
+              <a class="btn btn-outline-light btn-lg m-2" href="https://www.sans.org/mlp/online-cybersecurity-training-community/?hide-footer=1&utm_medium=CPC&utm_source=Google&utm_term=Online&utm_content=RSA1%20Online%20Comm&utm_campaign=NA%20Cybersec%20Training%20Community&gclid=Cj0KCQiAsoycBhC6ARIsAPPbeLuwFNmMwbVTwFLecdOsJa0cNKi7f1wPPd7GNTw9a8isDexe881P2hAaAvrDEALw_wcB role="button
+                rel="nofollow" target="_blank">Free Trainings</a>
+            </div>
+          </div>
+        </div>
+    </nav>
 </head>
-<body>
+
+<!-- <div class="container-fluid"> 
+    <div class="text-center">
+        <img class="img-fluid" src="https://i.imgur.com/xR2zjiu.jpeg"/>
+    </div> -->
+    
+
+<body class="indexbody">
     <div class="container" style="background-color:aliceblue">
     <h1 style="color:red; text-align: center">Cyber index</h1>
     <nav style="background-color: whitesmoke">
@@ -27,7 +49,7 @@
             
                   <td> <h3>Mitigation</h3><%=data[i].mitigation%></td>
 
-                  <td style="border: thin solid black"> <a href="/<%= data[i]._id%>/edit ">EDIT</a></td>  
+                  <td class="editlink" style="border: thin solid black"> <a href="/<%= data[i]._id%>/edit ">EDIT</a></td>  
 
                   <td> <form action="/<%=data[i]._id; %>?_method=DELETE" method="POST">
                     <input type="submit" value="DELETE"/>
@@ -38,33 +60,11 @@
     </form>
     </div>
 </body>
-
+</div>
 </html>
 
 
 
-            <!-- <table class="table table-primary">
-                <thead>
-                    <tr>
-                        <th scope="col">Column 1</th>
-                        <th scope="col">Column 2</th>
-                        <th scope="col">Column 3</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="">
-                        <td scope="row">R1C1</td>
-                        <td>R1C2</td>
-                        <td>R1C3</td>
-                    </tr>
-                    <tr class="">
-                        <td scope="row">Item</td>
-                        <td>Item</td>
-                        <td>Item</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div> -->
 
 
    
