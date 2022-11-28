@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
 app.use(express.static(__dirname + "/public"))
 
-
+//Seed file
 
 app.get('/cyberseed', (req,res)=>{
     //passing seed to create
@@ -31,7 +31,7 @@ app.get('/cyberseed', (req,res)=>{
 //     }
 // })
 
-                          ///get
+                          ///index file
 
 app.get('/cyber', (req, res) => {
     Schema.find({}, (error, allCyberPost) => {
